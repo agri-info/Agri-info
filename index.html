@@ -5,65 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGRI INFO | BSc Agriculture Notes</title>
     <style>
-        body { font-family: "Palatino", serif; background-color: #f0f0f0; margin: 0; padding: 0; color: #333; }
-        header { background-color: white; text-align: center; padding: 20px; border-bottom: 3px solid #90ee90; }
-        nav { background-color: #2e8b57; padding: 10px; text-align: center; position: sticky; top: 0; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .container { max-width: 900px; margin: 20px auto; background: white; padding: 30px; border-radius: 8px; }
-        .subject-card { border: 1px solid #ddd; margin-bottom: 20px; border-radius: 5px; }
-        .subject-header { background: #90ee90; padding: 10px; font-weight: bold; }
-        .file-row { display: flex; justify-content: space-between; padding: 10px; border-bottom: 1px solid #eee; }
-        .btn { background: #2e8b57; color: white; padding: 5px 10px; text-decoration: none; border-radius: 4px; font-size: 0.8em; }
-        .tag { font-size: 0.7em; padding: 2px 5px; border-radius: 3px; margin-right: 5px; font-weight: bold; }
-        .eng { background: #d1ecf1; color: #0c5460; }
-        .hin { background: #fff3cd; color: #856404; }
+        /* Reverted to your Original Styles */
+        body {
+            font-family: "Palatino", "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+            background-color: #f0f0f0; 
+            margin: 0;
+            padding: 0;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: white;
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 3px solid #90ee90;
+        }
+
+        .logo { width: 100px; height: auto; margin-bottom: 10px; }
+
+        h1 {
+            margin: 0;
+            color: #2e8b57;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* Navigation Menu - Light Green */
+        nav {
+            background-color: #90ee90;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul { list-style-type: none; margin: 0; padding: 0; }
+        nav ul li { float: left; position: relative; }
+        nav ul li a {
+            display: block;
+            color: #000;
+            text-align: center;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover { background-color: #7ccd7c; }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        section { padding: 20px 0; border-bottom: 1px solid #eee; }
+
+        h2 {
+            color: #2e8b57;
+            border-left: 5px solid #90ee90;
+            padding-left: 15px;
+        }
+
+        h3 { color: #444; margin-top: 25px; }
+
+        .year-box { background-color: #fafafa; padding: 15px; margin: 10px 0; border: 1px dashed #ccc; border-radius: 5px; }
+
+        .note-item { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 10px 0; 
+            border-bottom: 1px solid #eee; 
+        }
+
+        .lang-tag { font-size: 0.75em; font-weight: bold; padding: 2px 6px; border-radius: 3px; margin-right: 10px; }
+        .eng { background-color: #cfe2ff; color: #084298; }
+        .hin { background-color: #fff3cd; color: #856404; }
+
+        .download-link {
+            background-color: #2e8b57;
+            color: white;
+            padding: 6px 14px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.85em;
+        }
+        .download-link:hover { background-color: #1e5e3a; }
+
+        footer { text-align: center; padding: 30px; color: #777; font-size: 0.9em; }
     </style>
 </head>
 <body>
 
 <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/2329/2329244.png" alt="Agriculture Logo" class="logo">
     <h1>AGRI INFO</h1>
-    <p style="color: red; font-weight: bold;">Site Updated: Version 2.0 (Check for this text)</p>
 </header>
 
 <nav>
-    <a href="#1st">1st Year</a>
-    <a href="#2nd">2nd Year</a>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#1st-year">1st Year</a></li>
+        <li><a href="#2nd-year">2nd Year</a></li>
+    </ul>
 </nav>
 
 <div class="container">
-    <h2 id="1st">1st Year Notes (Sequence Wise)</h2>
+    
+    <section id="home">
+        <h2>Latest Information</h2>
+        <p>Welcome to AGRI INFO. Your notes are now organized sequence-wise by subject.</p>
+    </section>
 
-    <div class="subject-card">
-        <div class="subject-header">Farming-Based Livelihood System (FBLS)</div>
-        <div class="file-row"><span><span class="tag eng">ENG</span> FBLS Module 1</span><a href="FBLS (AGR) ENG.pdf" class="btn" download>Download</a></div>
-        <div class="file-row"><span><span class="tag eng">ENG</span> FBLS Module 2</span><a href="FBLS (AGR) ENG 2.pdf" class="btn" download>Download</a></div>
-        <div class="file-row"><span><span class="tag hin">HINDI</span> FBLS Part 1</span><a href="FBLS (AGR) Hindi.pdf" class="btn" download>Download</a></div>
-        <div class="file-row"><span><span class="tag hin">HINDI</span> FBLS Part 2</span><a href="FBLS (AGR) Hindi 2.pdf" class="btn" download>Download</a></div>
-        <div class="file-row"><span><span class="tag hin">HINDI</span> FBLS Part 3</span><a href="FBLS (AGR) HINDI 3.pdf" class="btn" download>Download</a></div>
-        <div class="file-row"><span><span class="tag hin">HINDI</span> FBLS Part 4</span><a href="FBLS (AGR) Hindi 4.pdf" class="btn" download>Download</a></div>
-    </div>
+    <section id="1st-year">
+        <h2>1st Year Notes</h2>
 
-    <div class="subject-card">
-        <div class="subject-header">Communication Skills</div>
-        <div class="file-row"><span><span class="tag eng">ENG</span> Communication Vol 1</span><a href="ENG Communication.pdf" class="btn" download>Download</a></div>
-        <div class="file-row"><span><span class="tag eng">ENG</span> Communication Vol 2</span><a href="ENG Communication 2.pdf" class="btn" download>Download</a></div>
-        <div class="file-row"><span><span class="tag hin">HINDI</span> Hindi Communication</span><a href="Hindi communication .pdf" class="btn" download>Download</a></div>
-    </div>
+        <h3>1. Farming-Based Livelihood System (FBLS)</h3>
+        <div class="year-box">
+            <div class="note-item"><span><span class="lang-tag eng">ENG</span> FBLS Module 1</span><a href="FBLS (AGR) ENG.pdf" class="download-link" download>Download</a></div>
+            <div class="note-item"><span><span class="lang-tag eng">ENG</span> FBLS Module 2</span><a href="FBLS (AGR) ENG 2.pdf" class="download-link" download>Download</a></div>
+            <div class="note-item"><span><span class="lang-tag hin">HINDI</span> FBLS Part 1</span><a href="FBLS (AGR) Hindi.pdf" class="download-link" download>Download</a></div>
+            <div class="note-item"><span><span class="lang-tag hin">HINDI</span> FBLS Part 2</span><a href="FBLS (AGR) Hindi 2.pdf" class="download-link" download>Download</a></div>
+            <div class="note-item"><span><span class="lang-tag hin">HINDI</span> FBLS Part 3</span><a href="FBLS (AGR) HINDI 3.pdf" class="download-link" download>Download</a></div>
+            <div class="note-item"><span><span class="lang-tag hin">HINDI</span> FBLS Part 4</span><a href="FBLS (AGR) Hindi 4.pdf" class="download-link" download>Download</a></div>
+        </div>
 
-    <div class="subject-card">
-        <div class="subject-header">Agronomy & Horticulture</div>
-        <div class="file-row"><span><span class="tag hin">HINDI</span> Agronomy Part 3</span><a href="Fund of Agronomy Hindi 3.pdf" class="btn" download>Download</a></div>
-        <div class="file-row"><span><span class="tag eng">ENG</span> Horticulture (Raveksh)</span><a href="Fund of horticulture by Raveksh .pdf" class="btn" download>Download</a></div>
-        <div class="file-row"><span><span class="tag hin">HINDI</span> Horticulture Part 3</span><a href="Fund of horticulture  Hindi 3.pdf" class="btn" download>Download</a></div>
-    </div>
+        <h3>2. Communication Skills</h3>
+        <div class="year-box">
+            <div class="note-item"><span><span class="lang-tag eng">ENG</span> English Communication Vol 1</span><a href="ENG Communication.pdf" class="download-link" download>Download</a></div>
+            <div class="note-item"><span><span class="lang-tag eng">ENG</span> English Communication Vol 2</span><a href="ENG Communication 2.pdf" class="download-link" download>Download</a></div>
+            <div class="note-item"><span><span class="lang-tag hin">HINDI</span> Hindi Communication Skills</span><a href="Hindi communication .pdf" class="download-link" download>Download</a></div>
+        </div>
 
-    <h2 id="2nd">2nd Year Notes</h2>
-    <div class="subject-card">
-        <div class="subject-header">Natural Farming</div>
-        <div class="file-row"><span><span class="tag eng">ENG</span> Principles of Natural Farming</span><a href="Principle and Practices of Natural Farming.pdf" class="btn" download>Download</a></div>
-    </div>
+        <h3>3. Agronomy & Horticulture</h3>
+        <div class="year-box">
+            <div class="note-item"><span><span class="lang-tag hin">HINDI</span> Agronomy Part 3</span><a href="Fund of Agronomy Hindi 3.pdf" class="download-link" download>Download</a></div>
+            <div class="note-item"><span><span class="lang-tag eng">ENG</span> Horticulture (Raveksh)</span><a href="Fund of horticulture by Raveksh .pdf" class="download-link" download>Download</a></div>
+            <div class="note-item"><span><span class="lang-tag hin">HINDI</span> Horticulture Part 3</span><a href="Fund of horticulture  Hindi 3.pdf" class="download-link" download>Download</a></div>
+        </div>
+    </section>
+
+    <section id="2nd-year">
+        <h2>2nd Year Notes</h2>
+        <div class="year-box">
+            <div class="note-item"><span><span class="lang-tag eng">ENG</span> Principles of Natural Farming</span><a href="Principle and Practices of Natural Farming.pdf" class="download-link" download>Download</a></div>
+        </div>
+    </section>
+
 </div>
+
+<footer>
+    &copy; 2026 AGRI INFO | Dedicated to Agriculture Students
+</footer>
 
 </body>
 </html>
